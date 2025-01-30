@@ -8,7 +8,7 @@ export default function Pagination({ links }) {
                     preserveScroll
                     href={link.url || " "} 
                     key={link.label} 
-                    className={"inline-block py-3 px-3 rounded-lg text-gray-200 text-xs " +(link.active ? "bg-gray-950" : "") + (!link.url ? " !text-gray-500 cursor-not-allowed" : " hover:bg-gray-950")}
+                    className={"inline-block py-3 px-3 rounded-lg text-gray-200 text-xs " + (link.active ? "bg-gray-950" : "") + (!link.url ? " !text-gray-500 cursor-not-allowed" : " hover:bg-gray-950")}
                     dangerouslySetInnerHTML={{ __html: link.label }}
                 >
                 </Link>
